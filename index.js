@@ -3,12 +3,12 @@ import express from 'express';
 import filterJobs from "./helpers/filterJobs.js";
 import {jobs} from "./data/mockedJobs.js";
 
-const app = express()
-const port = 5000
+const app = express();
+const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
-})
+});
 
 app.get('/jobs/all', (req, res) => {
     const isFullTime = req.query.fulltime || null;
