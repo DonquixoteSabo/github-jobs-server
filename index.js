@@ -1,10 +1,13 @@
 import express from 'express';
+import cors from 'cors';
 
 import filterJobs from "./helpers/filterJobs.js";
 import {jobs} from "./data/mockedJobs.js";
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
