@@ -3,6 +3,9 @@
   <p align="center">
    Server for my another application.
   </p>
+  <p align="center">
+    https://donquixote-github-jobs-server.herokuapp.com/
+  </p>
 
 
 <!-- ABOUT THE PROJECT -->
@@ -17,6 +20,13 @@ My main project [link](https://github.com/DonquixoteSabo/Github-Jobs)
 
 * [Express](https://expressjs.com/)
 * [Heroku](https://www.heroku.com/)
+
+### Endpoints
+
+* "/jobs?location=string&fulltime=boolean&value=string"
+* "/jobs/all?location=string&fulltime=boolean"
+* "/jobs/job/:id"
+
 
 ### Installation
 
